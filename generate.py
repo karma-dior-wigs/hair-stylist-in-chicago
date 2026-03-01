@@ -11,7 +11,7 @@ zip_codes = [
 "60655","60656","60657","60659","60660","60661","60707"
 ]
 
-base_url = "https://karma-dior-wigs.github.io/hair-stylist-in-chicago/index.html"  # CHANGE THIS
+base_url = "https://karma-dior-wigs.github.io/"  # CHANGE THIS
 
 template = """
 <!DOCTYPE html>

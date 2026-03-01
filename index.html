@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karma Dior | Wig Hair Stylist in Chicago</title>
+<title>Karma Dior | Black Wig Stylist in Chicago</title>
 
 <meta name="description" content="Karma Dior is a Black wig stylist in Chicago specializing in custom wigs, lace installs, wig coloring, and precision lace customization. Appointment-only. Serving Chicago and South Suburbs.">
 
@@ -11,7 +11,7 @@
 
 <style>
 :root {
-  --soft-pink: #f6e6eb;
+  --soft-pink: #f9e9ef;
   --gold: #C6A75E;
   --white: #ffffff;
   --black: #000000;
@@ -25,36 +25,53 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--soft-pink);
+  background: linear-gradient(135deg, #f9e9ef, #f6dce4);
   color: var(--black);
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 .main {
-  max-width: 950px;
+  max-width: 1050px;
   margin: auto;
-  padding: 4rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 
-.section-title {
+/* HERO */
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeIn 1.2s ease;
+}
+
+.hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.main p {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1.05rem;
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
 }
+
+/* CARDS */
 
 .card {
   background: var(--white);
-  padding: 2.2rem;
-  margin-bottom: 2rem;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(198,167,94,0.25);
 }
 
 .card.gold {
@@ -62,14 +79,39 @@ body {
 }
 
 .card h3 {
-  margin-bottom: 1.2rem;
-  font-weight: 500;
   font-family: 'Playfair Display', serif;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
 }
 
-.process-step {
-  margin-bottom: 1rem;
+/* PROCESS STEPS */
+
+.process-container {
+  display: grid;
+  gap: 1.5rem;
 }
+
+.step {
+  padding: 1.5rem;
+  border-radius: 14px;
+  background: #fff;
+  border-left: 5px solid var(--gold);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.step:hover {
+  background: #fffaf2;
+  transform: scale(1.02);
+}
+
+.step-number {
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+/* CTA */
 
 .cta-container {
   text-align: center;
@@ -78,20 +120,23 @@ body {
 
 .cta-btn {
   display: inline-block;
-  padding: 16px 42px;
+  padding: 18px 48px;
   background: var(--gold);
   color: var(--black);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 50px;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
 
 .cta-btn:hover {
   background: #b89645;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
 }
+
+/* FOOTER */
 
 footer {
   text-align: center;
@@ -100,9 +145,16 @@ footer {
   opacity: 0.7;
 }
 
-@media (max-width: 600px) {
-  .section-title {
-    font-size: 2rem;
+/* ANIMATION */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
   }
 }
 </style>
@@ -112,68 +164,81 @@ footer {
 
 <main class="main">
 
-<h1 class="section-title">Luxury Black Wig Stylist in Chicago</h1>
-
-<p>
-Karma Dior is an appointment-only Black wig stylist in Chicago specializing in custom wig design, precision lace installs, and flawless finishing techniques. 
-Every unit is crafted and installed with intention for women who want natural hairlines, seamless blends, and perfectly sculpted baby hairs.
-</p>
+<div class="hero">
+  <h1>Chicago’s Luxury Black Wig Install Specialist</h1>
+  <p>
+  Custom wigs. Precision lace installs. Flawless baby hairs. 
+  Karma Dior delivers premium wig experiences for women in Chicago 
+  who want natural-looking installs crafted with intention.
+  </p>
+</div>
 
 <div class="card gold">
   <h3>Signature Services</h3>
   <p>
-  Custom Wig Creation · Wig + Install Packages · Lace Front & Closure Installs · Wig Revamps · Wig Coloring · 
-  Shampoo & Deep Cleansing · Detangle & Conditioning · Lace Customization & Styling
+  Custom Wig Creation · Wig + Install Packages · Lace Front & Closure Installs · 
+  Wig Revamps · Custom Coloring · Deep Cleansing · Lace Customization · Styling
   </p>
 </div>
 
 <div class="card">
-  <h3>The 6-Step Booking Process</h3>
+  <h3>Your Wig Install Journey</h3>
 
-  <div class="process-step">
-  <strong>Step 1:</strong> Email Inquiry – Begin by emailing Karma Dior to express interest in a custom wig or wig + install service.
+  <div class="process-container">
+
+    <div class="step">
+      <div class="step-number">Step 1 — Email Inquiry</div>
+      Email to express interest in a custom wig or wig + install package.
+    </div>
+
+    <div class="step">
+      <div class="step-number">Step 2 — Direct Contact</div>
+      You receive my contact details to continue the booking process.
+    </div>
+
+    <div class="step">
+      <div class="step-number">Step 3 — Consultation</div>
+      We discuss length, density, lace type, color, and whether you’re booking:
+      <br>• Custom Wig Only
+      <br>• Wig + Install
+    </div>
+
+    <div class="step">
+      <div class="step-number">Step 4 — Custom Processing</div>
+      Your wig is professionally prepared:
+      <br>• Colored (if needed)
+      <br>• Shampooed & deep cleansed
+      <br>• Brushed & detangled
+      <br>• Lace customized
+      <br>• Styled & shaped
+    </div>
+
+    <div class="step">
+      <div class="step-number">Step 5 — $50 Deposit</div>
+      A non-refundable $50 deposit is required to secure your appointment.
+      Accepted: Zelle, CashApp, PayPal, Apple Pay.
+    </div>
+
+    <div class="step">
+      <div class="step-number">Step 6 — Install Day</div>
+      Precision install. Seamless blend. Sculpted baby hairs.
+      Walk out flawless.
+    </div>
+
   </div>
-
-  <div class="process-step">
-  <strong>Step 2:</strong> Contact Information Exchange – You will receive a reply and get my contact details to move forward.
-  </div>
-
-  <div class="process-step">
-  <strong>Step 3:</strong> Consultation – A full consultation is conducted to determine your desired look, hair density, length, lace type, and whether you are booking:
-  <br>• Custom Wig Only
-  <br>• Wig + Install
-  </div>
-
-  <div class="process-step">
-  <strong>Step 4:</strong> Wig Processing – Each unit is professionally processed for you, which may include:
-  <br>• Custom coloring
-  <br>• Shampoo & deep cleanse
-  <br>• Brush & detangle preparation
-  <br>• Lace customization
-  <br>• Density shaping & styling
-  </div>
-
-  <div class="process-step">
-  <strong>Step 5:</strong> Deposit Required – To secure your appointment, a <strong>$50 non-refundable deposit</strong> is required before scheduling. I accept Zelle, cashapp, paypal, and apple pay.
-  </div>
-
-  <div class="process-step">
-  <strong>Step 6:</strong> Install Day – Your wig is installed with precision, secure placement, and detailed baby hair sculpting for a flawless finish.
-  </div>
-
 </div>
 
 <div class="card gold">
   <h3>Location</h3>
   <p>
   Chicago · South Suburbs · Appointment-Only<br>
-  Serving Dolton, South Holland, Calumet City, Harvey, and surrounding areas.<br>
-  Exact address provided after deposit confirmation.
+  Serving Dolton, South Holland, Calumet City, Harvey & surrounding areas.<br>
+  Address shared after deposit confirmation.
   </p>
 </div>
 
-<p style="font-size:0.95rem;">
-Limited appointments available each week. Early booking is recommended.
+<p style="text-align:center; font-size:0.95rem;">
+Limited weekly appointments available. Early booking recommended.
 </p>
 
 <div class="cta-container">

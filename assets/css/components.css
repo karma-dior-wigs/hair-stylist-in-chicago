@@ -1,1 +1,106 @@
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 18px;
+  background: radial-gradient(circle at 30% 20%, var(--white), var(--gold));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  box-shadow: var(--shadow-chip);
+}
+
+.brand-name {
+  font-size: 1.3rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.brand-tagline {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+  letter-spacing: 0.16em;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(0,0,0,0.1);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+}
+
+.nav-link.active {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card {
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 16px;
+  background: rgba(248,201,216,0.18);
+}
+
+.card.gold {
+  background: rgba(212,175,55,0.12);
+}
+
+.faq-item {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  background: rgba(255,255,255,0.8);
+}
+
+.faq-q {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input, textarea, select {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.2);
+  font-size: 0.9rem;
+}
+
+button.primary {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, var(--gold), #f6e3a9);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+}
